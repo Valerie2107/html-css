@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    text-align: center;
+    
+}
+.miaou{
+    margin:1em;
+}
