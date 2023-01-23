@@ -1,0 +1,24 @@
+.objet {
+    background-color: aquamarine;
+    color: orange;
+    font-size: 2em;
+    width:200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.logo {
+    animation-name: logoHTML5;
+    animation-duration: 4s;
+}
+
+@keyframes logoHTML5 {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(1turn); /* équivalent à rotateY(360deg) */
+    }
+}

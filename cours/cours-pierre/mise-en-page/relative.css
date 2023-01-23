@@ -1,0 +1,30 @@
+
+.bloc {
+    width: 500px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/*On utilise les ID différents pour donner des comportements  */
+#bloc1{
+    background-color: aquamarine;
+    position: relative;
+    right: 200px;
+    top: 100px;
+}
+#bloc2{
+    background-color: bisque;
+    position: relative; /*position relative*/
+    top: 50px;          /*déplace par rapport au bord supérieur de cet élément bloc*/
+    left: 100px;        /*déplacement par rapport au bord gauche de l'élément*/
+}    
+#bloc3{
+    background-color: blue;
+    position: relative;
+}
+#bloc4{
+    background-color: blueviolet;
+}

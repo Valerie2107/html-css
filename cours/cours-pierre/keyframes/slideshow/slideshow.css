@@ -1,0 +1,36 @@
+#photos{
+    position: relative;
+    width: 360px;
+    height: 360px;
+    overflow: hidden;  /*pour ne pas voir ce qui dépasse de la zone prédéfinie, ici 360px par photos*/
+    margin: 20px auto;
+}
+#slideshow li{
+    display: inline;
+}
+
+#slideshow{
+    position: absolute;
+    top: 0;  /*pour aligner en haut à gauche dans mon exercice*/
+    left: 0;
+    width: 1800px;   /*5photos de 360px -- 5x360px=1800px*/
+    margin: 0;
+    padding: 0;
+
+    animation-name: slider;
+    animation-duration: 12s;   /**/
+    animation-iteration-count: infinite; /*jamais de temps d'arrêt*/
+    animation-timing-function: linear;    /**/
+}
+
+@keyframes slider {
+    0.0%  {left: 0px;}
+    12.5% {left: 0px;}    /* pour qu'il fasse un temps d'arrêt*/
+    25.0% {left: -360px;}
+    37.5% {left: -360px;}     /* pour qu'il fasse un temps d'arrêt*/
+    50.0% {left: -720px;}
+    62.5% {left: -720px;}    /* pour qu'il fasse un temps d'arrêt*/
+    75.0% {left: -1080px;}
+    87.5% {left: -1080px;}    /* pour qu'il fasse un temps d'arrêt*/
+    100.0% {left: -1440px;}
+}

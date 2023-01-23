@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Textarea</title>
+</head>
+<body>
+    <h1>Textarea</h1>
+    <form method="post" action="textarea.php" name="comm1" > <!--si j'ai une page PHP, dans action je dois renvoyer vers cette page PHP-->
+        <label for="nom">Nom: </label><br>
+            <input type="text" id="nom" name="nom" required><br>  <!--ici on met des br pour l'exercice, mais ce n'est pas la bonne pratique. Il vaut mieux faire la mise en page avec du CSS-->
+        <label for="lang">Langue: </label><br>
+            <select name="langues" id="lang">
+                <!--ici je ne met pas l'atrtibut multiple car je veux que le user ne puisse choisir qu'une seule langue-->
+                <option value="0" disabled selected>Choisissez votre langue</option>
+                <option value="FR">Français</option>
+                <option value="NL">Nederlands</option>
+                <option value="UK">English</option>
+                <option value="DE">Deutsch</option>   
+            </select><br>
+        <fieldset>
+            <legend>Vos préférences</legend>
+            <input type="checkbox" id="dog" name="pref[]" value="Chien"><label for="dog">Chien</label>
+            <input type="checkbox" id="cat" name="pref[]" value="Chat"><label for="cat">Chat</label>
+            <input type="checkbox" id="mouse" name="pref[]" value="Souris"><label for="mouse">Souris</label>
+            <input type="checkbox" id="fish" name="pref[]" value="Poisson"><label for="fish">Poisson</label><br>
+            <input type="reset" value="Effacer le contenu">
+        </fieldset><br>    
+        <label for="msg">Message: </label><br>
+            <textarea id="msg" name="msg" placeholder="Entrez votre message de maximum 500 caractères" maxlength="500" rows="5" cols="60"></textarea><br>    
+            <input type="reset" value="Effacer le contenu"><br>
+        <input type="submit" value="Envoyer le message"><br>    
+   </form>
+</body>
+</html>

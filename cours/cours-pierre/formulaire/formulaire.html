@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form method="get" action="" name="form1">
+        <!--champ de texte avec son label. Le for du label doit avoir la même valeur que l'id de l'élément du formulaire, ne pas faire un for "name" pour un id "mail" -->
+        <label>Titre: </label>
+        <input type="radio" name="titre" id="M" checked>  <!--checked coche par défaut le choix du titre sur lequel il est mis. Le user peut modifier la valeur en cliquant sur une des autres propositions. 
+        Il ne le faut qu'à un seul endroit sinon HTML ne comprendra pas. Il n'est pas obligatoire de l'indiquer-->
+        <input type="radio" name="titre" id="Mme">
+
+        <br>
+        <label for="nom">Nom: </label><input type="text" name="nom" id="nom" placeholder="Entrez ici votre nom"> 
+        <!--balise de type inline - si on veut que les champs soient les uns au-dessus des autres, il faut un <br>  -->
+        <br>
+        <label for="prenom">Prénom: </label><input type="text" name="prenom" id="prenom" placeholder="Entrez ici votre prénom">
+        <br>
+        <!--pour la date de naissance, c'est en fait un calendrier qu'on désire et pas du texte-->
+        <label for="birth">Date de naissance: </label><input type="date" name="birth" id="birth" required>
+        <br>
+        <!-- ne pas se tromper, ici c'est un type email et pas text -->
+        <label for="mail">E-mail: </label><input type="email" name="mail" id="mail">
+        <br>
+        <!--   -->
+        <label for="pwd">Mot de passe: </label><input type="password" name="pwd" id="pwd">
+        <br>
+        
+        <input type="submit" value="Envoyer"> <!-- je dois mettre une value sinon il va mettre un vide par défaut-->
+
+    </form>
+</body>
+</html>

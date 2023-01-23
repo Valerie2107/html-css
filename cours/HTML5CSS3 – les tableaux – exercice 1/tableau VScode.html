@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>page d'accueil</title>
+		<meta charset="utf8"/>
+		<style>
+			table, tr, td, th{
+				border: 2px  solid black; /*bordures de 2px dépaisseur trait plein et noir*/
+			}
+			tbody tr:hover{
+				background-color: #777777; /*pour mettre en valeur lors du survol avec la souris*/
+			}
+			table{ /*ici on permet de ne pas forcément avoir besoin d'utiliser les flexBox*/
+				width: 50%;
+				margin: 0 auto; /*top et bottom=0  left et right = automatique*/
+			}
+			</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2">Formateurs</th>
+				</tr>
+				<tr>
+					<th>Nom</th>
+					<th>Prénom</th>
+				</tr>
+			</thead>
+			<!--corps de mon tableau-->
+			<tbody>
+				<!--je décide de comment j'organise mes indentations - soit les uns à coté des autres, soit l'un sur l'autre. A moi de voir ce qui est le plus lisible pour moi-->
+				<tr><td>Pitz</td><td>Michael</td></tr>
+				<tr>
+					<td>Sandron</td><td>Pierre</td>
+				</tr>
+				<tr>
+					<td><img src="../exercices/pile.jpg"></td> 
+					<td>André</td>
+				</tr>
+			</tbody>	
+			<!--normalement le tfoot doit se trouver avant le tbody. Après test dans 3 navigateurs et validation du code sur W3C validator, cela fonctionne également ainsi. alors par souci de logique et de lisibilité, je ferai ainsi tant que cela ne bogguera pas-->
+			<tfoot>
+				<td colspan="2">total professeurs</td>
+			</tfoot>
+		</table>	
+	</body>
+</html>

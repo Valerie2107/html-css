@@ -1,0 +1,53 @@
+body > div{
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+}
+header{
+    border: solid blue;
+    height: 100px;
+    position: sticky;
+    background-color: papayawhip;
+}
+#logo{ 
+    width: 70px;
+}
+main{
+    position: relative;
+    width: 960px max-content;
+}
+nav{
+    line-height: 40px;
+    width: 320px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+menu{
+    list-style: none;
+    text-align: center;    
+    padding: 0%;
+}
+button{
+    background-color: papayawhip;
+    border: solid blue;
+}
+section{
+    text-align: justify;
+    width: 640px;
+    position: absolute;
+    top: 0%;
+    left: 320px;
+    border: solid pink;
+}
+footer{
+    position:relative;
+}
+#back-to-the-top{
+	position:fixed;
+	right:2em;
+	bottom:1em;
+}
+#back-to-the-top img{
+	width:125px;
+}

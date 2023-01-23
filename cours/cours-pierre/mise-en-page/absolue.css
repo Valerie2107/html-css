@@ -1,0 +1,28 @@
+/* */
+.bloc {
+    width: 500px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/*On utilise les ID différents pour donner des comportements  */
+#bloc1{
+    background-color: aquamarine;
+}
+#bloc2{
+    background-color: bisque;
+    
+    position: absolute;  /*je fixe l'objet grâce au CSS. Genre un bouton retour au top. Plus tard je pourrai l'animer grâce au JS*/
+    top: 50px;
+    left: 100px;
+
+}
+#bloc3{
+    background-color: blue;
+}
+#bloc4{
+    background-color: blueviolet;
+}
